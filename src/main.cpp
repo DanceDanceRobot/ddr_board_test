@@ -21,10 +21,10 @@ void loop() {
   // put your main code here, to run repeatedly:
   motor1.out(1);
   delay(1000);
-  motor1.out(0);
+  motor1.free();
   delay(1000);
   motor1.out(-1); 
   delay(1000);
-  motor1.out(0);
+  motor1.free();
   delay(1000);
 }

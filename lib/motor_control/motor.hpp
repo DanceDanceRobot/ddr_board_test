@@ -2,7 +2,7 @@
 
 #include <Arduino.h>
 #include <stdbool.h>
-#include "board_pins.hpp"
+#include "../board_pins.hpp"
 
 constexpr uint32_t PWM_FRQ = 78125;
 constexpr uint32_t PWM_WIDTH = 10;
