@@ -10,9 +10,9 @@ constexpr uint32_t PWM_RESOL = 1024; //分解能
 
 class DRIVER{
 private:
-    driver_pin_t pin;
+    const driver_pin_t &pin;
 public:
-    DRIVER(driver_pin_t _pin):pin(_pin){
+    DRIVER(const driver_pin_t &_pin):pin(_pin){
     }
 
     void init(void);
@@ -28,9 +28,9 @@ public:
 class MOTOR{
 private:
     const float motor_k;
-    motor_pin_t pin;
+    const motor_pin_t &pin;
 public:
-    MOTOR(motor_pin_t _pin,float _motor_k)
+    MOTOR(const motor_pin_t &_pin,float _motor_k)
         :pin(_pin),motor_k(_motor_k/2){
     }
 

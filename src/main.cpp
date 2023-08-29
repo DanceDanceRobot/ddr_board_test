@@ -5,8 +5,8 @@
 #include "../lib/motor/motor.hpp"
 #include "../lib/gyro/gyro.hpp"
 
-//#define MOTOR_TEST
-#define BMX_TEST
+#define MOTOR_TEST
+//#define BMX_TEST
 
 DRIVER md1(DRIVER1_pin);
 MOTOR motor1(MOTOR1_pin,1.0f);
