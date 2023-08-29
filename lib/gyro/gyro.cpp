@@ -72,7 +72,7 @@ void BMX055::init(void)
     i2c.endTransmission();
 }
 
-xyz_t BMX055::acc(void){
+xyz_t BMX055::read_acc(void){
     xyz_t xyz;
     uint8_t data[6];
     for (int i = 0; i < 6; i++)
@@ -103,7 +103,7 @@ xyz_t BMX055::acc(void){
     return xyz;
 }
 
-xyz_t BMX055::gyro(void){
+xyz_t BMX055::read_gyro(void){
     xyz_t xyz;
     uint8_t data[6];
   for (int i = 0; i < 6; i++)
@@ -131,7 +131,7 @@ xyz_t BMX055::gyro(void){
 
   return xyz;
 }
-xyz_t BMX055::mag(void)
+xyz_t BMX055::read_mag(void)
 {
     xyz_t xyz;
     uint8_t data[8];

@@ -21,7 +21,7 @@ public:
 
     void init(void);
 
-    xyz_t acc(void);
-    xyz_t gyro(void);
-    xyz_t mag(void);
+    xyz_t read_acc(void);
+    xyz_t read_gyro(void);
+    xyz_t read_mag(void);
 };

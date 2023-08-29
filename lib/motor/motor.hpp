@@ -35,6 +35,6 @@ public:
     }
 
     void init(void);
-    void out(float duty);
+    void out(float duty); //-1~1
     void free(void);
 };
