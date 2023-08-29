@@ -1,8 +1,8 @@
 #include <Arduino.h>
 #include <assert.h>
 
-#include "../lib/board_pins.hpp"
-#include "../lib/motor_control/motor.hpp"
+#include "../lib/board_data/board_pins.hpp"
+#include "../lib/motor/motor.hpp"
 #include "../lib/gyro/gyro.hpp"
 
 //#define MOTOR_TEST
@@ -40,7 +40,7 @@ void loop() {
 #ifdef BMX_TEST
   xyz_t data = gyro_sens.acc();
   Serial.printf("%f,%f,%f,",data.x,data.y,data.z);
-  data = gyro_sens.acc();
+  data = gyro_sens.gyro();
   Serial.printf("%f,%f,%f,",data.x,data.y,data.z);
   data = gyro_sens.mag();
   Serial.printf("%f,%f,%f\r\n",data.x,data.y,data.z);

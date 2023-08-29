@@ -2,7 +2,7 @@
 
 #include <Arduino.h>
 #include <stdbool.h>
-#include "../board_pins.hpp"
+#include "../board_data/board_pins.hpp"
 #include<Wire.h>
 
 struct xyz_t{
