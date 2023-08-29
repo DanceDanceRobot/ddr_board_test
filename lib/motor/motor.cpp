@@ -19,7 +19,7 @@ void DRIVER::init(void){
 
 void DRIVER::reset(void){
     digitalWrite((int)pin.STBY,LOW);
-    delay(1);
+    delay(100);
 
     init();
 }
