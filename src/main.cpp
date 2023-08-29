@@ -38,11 +38,11 @@ void loop() {
 #endif //MOTOR_TEST
 
 #ifdef BMX_TEST
-  xyz_t data = gyro_sens.acc();
+  xyz_t data = gyro_sens.read_acc();
   Serial.printf("%f,%f,%f,",data.x,data.y,data.z);
-  data = gyro_sens.gyro();
+  data = gyro_sens.read_gyro();
   Serial.printf("%f,%f,%f,",data.x,data.y,data.z);
-  data = gyro_sens.mag();
+  data = gyro_sens.read_mag();
   Serial.printf("%f,%f,%f\r\n",data.x,data.y,data.z);
   delay(50);
 #endif //BMX_TEST
