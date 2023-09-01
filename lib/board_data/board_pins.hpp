@@ -9,7 +9,7 @@ enum class GPIO_num{
 
     //driver2
     DRIVER2_ERR = 4,
-    DRIVER2_MODE = 14,
+    DRIVER2_MODE = 2,
     DRIVER2_STBY = 15,
 
     //motor1
@@ -62,7 +62,7 @@ const motor_pin_t MOTOR2_pin = {motor2_pwm,GPIO_num::MOTOR2_EN};
 const motor_pin_t MOTOR3_pin = {motor3_pwm,GPIO_num::MOTOR3_EN};
 const motor_pin_t MOTOR4_pin = {motor4_pwm,GPIO_num::MOTOR4_EN};
 
-//
+
 struct driver_pin_t{
   GPIO_num ERR;
   GPIO_num MODE;

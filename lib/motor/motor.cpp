@@ -9,12 +9,14 @@ void DRIVER::init(void){
     pinMode((int)pin.ERR, INPUT);
 
     //start phase mode
-    digitalWrite((int)pin.MODE,LOW);
+    digitalWrite((int)pin.MODE,HIGH);
+    digitalWrite((int)pin.STBY,LOW);
+    delay(10);
 
     digitalWrite((int)pin.STBY,HIGH);
-    delay(1);
+    delay(10);
     digitalWrite((int)pin.MODE,HIGH);
-    delay(1);
+    delay(10);
 }
 
 void DRIVER::reset(void){
